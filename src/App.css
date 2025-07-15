@@ -133,6 +133,21 @@ body {
   border: 2px solid #b3e0ff;
 }
 
+/* Responsive fix for mobile */
+@media (max-width: 600px) {
+  .home-container,
+  .about-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .home-card,
+  .about-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 /* Portfolio page */
 .portfolio-container {
   min-height: 100vh;
@@ -197,6 +212,8 @@ body {
   align-items: center;
   justify-content: center;
   background: #f6fbff;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .about-card {
   background: #fff;
@@ -273,6 +290,8 @@ body {
   align-items: center;
   justify-content: center;
   background: #f6fbff;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .home-card {
   background: #fff;
