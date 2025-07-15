@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
 
-      <div className="main-container fade-in">
+      <div className="home-container fade-in">
         <div className="profile-card fade-in">
           <img src={profilePic} alt="Profile" className="profile-img" />
           <h2>Rivky Putra Setiawan</h2>
