@@ -1,38 +1,293 @@
-.App {
-  text-align: center;
+body {
+  background: #f6fbff;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.7s ease forwards;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.main-container {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6fbff;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 30px 25px 20px 0 rgba(0, 153, 255, 0.512);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 300px;
+  transition: background 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.profile-card:hover {
+  background: #0099ff;
+  box-shadow: 0 6px 28px 0 rgba(0, 153, 255, 0.35);
+  transform: scale(1.035);
+}
+
+.profile-card:hover {
+  background: #0099ff;
+  box-shadow: 0 6px 28px 0 rgba(0, 153, 255, 0.35);
+}
+
+.profile-card:hover h2,
+.profile-card:hover .sosmed-icons a,
+.profile-card:hover .btn-main {
+  color: #fff !important;
+  transition: color 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.profile-card:hover .sosmed-icons a {
+  color: #fff !important;
+}
+
+.profile-card:hover .btn-main {
+  background: #fff;
+  color: #0099ff !important;
+  border: 2px solid #fff;
+  transition: background 0.35s cubic-bezier(.4,0,.2,1), color 0.35s cubic-bezier(.4,0,.2,1), border 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.profile-card:hover .btn-main:hover {
+  background: #0099ff;
+  color: #fff !important;
+  border: 2px solid #fff;
+}
+
+.profile-card:hover .profile-img {
+  border: 4px solid #fff;
+  transition: border 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center bottom;
+  border: 4px solid #0099ff;
+  margin-bottom: 1rem;
+  transition: border 0.2s;
+}
+
+.sosmed-icons {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1rem 0 1.5rem 0;
+}
+.sosmed-icons a {
+  color: #0099ff;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.sosmed-icons a:hover {
+  color: #40c4ff;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btn-main {
+  background: #0099ff;
+  color: #fff;
+  border: 2px solid #b3e0ff;
+  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+.btn-main:hover {
+  background: #fff;
+  color: #0099ff;
+  border: 2px solid #b3e0ff;
+}
+
+/* Portfolio page */
+.portfolio-container {
+  min-height: 100vh;
+  background: #f6fbff;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.portfolio-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px 0 rgba(0, 153, 255, 0.12);
+  padding: 1.5rem 2rem;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.portfolio-card:hover {
+  box-shadow: 0 8px 24px 0 rgba(0, 153, 255, 0.22);
+  transform: translateY(-4px) scale(1.025);
 }
 
-.App-link {
-  color: #61dafb;
+.portfolio-preview {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #e3f1fb;
+  border: 1.5px solid #b3e0ff;
+}
+.portfolio-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0099ff;
+  margin-bottom: 0.7rem;
+}
+.portfolio-link {
+  color: #40c4ff;
+  text-decoration: none;
+  font-size: 1rem;
+  word-break: break-all;
+}
+.portfolio-link:hover {
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* About page */
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6fbff;
+}
+.about-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px 0 rgba(0, 153, 255, 0.15);
+  padding: 2.5rem 2.5rem;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.btn-back-icon {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1rem;
+  background: transparent;
+  color: #0099ff;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  outline: none;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+.btn-back-icon.top {
+  top: 1.1rem;
+  left: 1.1rem;
+}
+.back-row {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.1rem;
+  left: 1.1rem;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.back-icon {
+  color: #0099ff;
+  transition: color 0.2s;
+}
+
+.back-text {
+  color: #0099ff;
+  font-weight: bold;
+  font-size: 1.08rem;
+  margin-left: 0.3rem;
+}
+
+.back-row:hover .back-icon,
+.back-row:hover .back-text {
+  color: #005fa3;
+}
+
+.about-card h2 {
+  color: #0099ff;
+  margin-bottom: 1rem;
+}
+.about-card p {
+  color: #222;
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+
+/* Home page */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6fbff;
+}
+.home-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px 0 rgba(0, 153, 255, 0.15);
+  padding: 2.5rem 2.5rem;
+  max-width: 500px;
+  text-align: center;
+}
+.home-card h2 {
+  color: #0099ff;
+  margin-bottom: 1rem;
+}
+.home-card p {
+  color: #222;
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
 }

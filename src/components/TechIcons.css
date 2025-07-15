@@ -1,0 +1,25 @@
+.tech-icons-bg-static {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.tech-icon {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.tech-icon.react { color: #61dafb; }
+.tech-icon.html { color: #e44d26; }
+.tech-icon.css { color: #264de4; }
+.tech-icon.bootstrap { color: #563d7c; }
+.tech-icon.js { color: #f7df1e; }
+.tech-icon.laravel { color: #ff2d20; }
+.tech-icon.postman { color: #ff6c37; }
+.tech-icon.wordpress { color: #21759b; }
