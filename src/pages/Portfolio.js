@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
-import project1 from "../assets/project1.jpg";
+import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
 import TechIcons from "../components/TechIcons";
