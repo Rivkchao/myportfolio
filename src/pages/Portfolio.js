@@ -9,13 +9,13 @@ import TechIcons from "../components/TechIcons";
 
 const projects = [
   {
-    title: "Project 1",
-    url: "https://project1.example.com",
+    title: "MySkill Residence Property",
+    url: "https://myskillresidence.rivkyps.my.id",
     image: project1,
   },
   {
-    title: "Project 2",
-    url: "https://project2.example.com",
+    title: "Simple Calculator",
+    url: "https://hacktiv8ibm.calculator.rivkyps.my.id",
     image: project2,
   },
   {
