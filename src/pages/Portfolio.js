@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
 import project1 from "../assets/Project1.png";
 import project2 from "../assets/Project2.png";
-import project3 from "../assets/project3.jpg";
+import project3 from "../assets/Project3.png";
 import TechIcons from "../components/TechIcons";
 
 const projects = [
@@ -19,8 +19,8 @@ const projects = [
     image: project2,
   },
   {
-    title: "Project 3",
-    url: "https://project3.example.com",
+    title: "PPDB ONGZSCHOOL",
+    url: "https://ppdb.ongzschool.rivkyps.my.id",
     image: project3,
   },
 ];
