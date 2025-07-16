@@ -19,8 +19,8 @@ const projects = [
     image: project2,
   },
   {
-    title: "PPDB ONGZSCHOOL",
-    url: "https://ppdb.ongzschool.rivkyps.my.id",
+    title: "On Going",
+    url: "https://www.rivkyps.my.id",
     image: project3,
   },
 ];
