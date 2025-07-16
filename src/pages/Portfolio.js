@@ -40,7 +40,7 @@ const Portfolio = () => {
             <img src={project.image} alt={project.title} className="portfolio-preview" />
             <div className="portfolio-title">{project.title}</div>
             <a href={project.url} target="_blank" rel="noopener noreferrer" className="portfolio-link">
-              {project.url}
+            Live Preview
             </a>
           </div>
         ))}
