@@ -19,8 +19,8 @@ const projects = [
     image: project2,
   },
   {
-    title: "On Going",
-    url: "https://www.rivkyps.my.id",
+    title: "To Do List",
+    url: "https://todolist.rivkyps.my.id",
     image: project3,
   },
 ];
