@@ -39,7 +39,7 @@ const Portfolio = () => {
         <FaChevronLeft size={22} className="back-icon" />
         <span className="back-text">Back</span>
       </div>
-      <h2 style={{ marginLeft: '2.5rem', color: '#0099ff' }}>My Portfolio</h2>
+      <h2 style={{ marginLeft: '2.5rem', color: '#FFB300' }}>My Portfolio</h2>
       <div className="portfolio-list">
         {projects.map((project, idx) => (
           <div className="portfolio-card fade-in" key={idx} style={{ animationDelay: `${idx * 0.2}s` }}>
