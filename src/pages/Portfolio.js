@@ -5,6 +5,7 @@ import { FaChevronLeft } from "react-icons/fa";
 import project1 from "../assets/Project1.png";
 import project2 from "../assets/Project2.png";
 import project3 from "../assets/Project3.png";
+import project4 from "../assets/Project4.png";
 import TechIcons from "../components/TechIcons";
 
 const projects = [
@@ -22,6 +23,11 @@ const projects = [
     title: "To Do List",
     url: "https://todolist.rivkyps.my.id",
     image: project3,
+  },
+  {
+    title: "Ti-Pomodoro",
+    url: "https://tipomodoro.rivkyps.my.id",
+    image: project4,
   },
 ];
 
