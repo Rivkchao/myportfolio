@@ -23,11 +23,12 @@ export default function About() {
   
             <div className="fade-in space-y-6">
               {[
-                { name: "Figma", width: 85 },
-                { name: "CSS/Tailwind/Bootstrap", width: 88 },
-                { name: "JavaScript", width: 90 },
-                { name: "React.js", width: 84 },
-                { name: "React Native", width: 80 },
+              { skill: 'HTML', percent: 90 },
+              { skill: 'CSS/Bootstrap', percent: 88 },
+              { skill: 'JavaScript', percent: 90 },
+              { skill: 'React.js', percent: 80 },
+              { skill: 'React Native', percent: 78 },
+              { skill: 'PHP/Laravel', percent: 86 },
               ].map(skill => (
                 <div key={skill.name} className="skill-item">
                   <div className="flex justify-between mb-2">
