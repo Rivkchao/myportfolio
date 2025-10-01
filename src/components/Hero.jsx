@@ -75,7 +75,7 @@ export default function Hero() {
           <img src={profileImage} alt="Profile" className="w-full h-full rounded-full object-cover" />
         </div>
         <h1 className="text-6xl md:text-8xl font-bold mb-4 gradient-text">Rivky Putra Setiawan</h1>
-        <p className="text-2xl md:text-3xl text-gray-300 mb-8">Frontend Developer</p>
+        <p className="text-2xl md:text-3xl text-gray-300 mb-8">Fullstack Web Developer</p>
         <div className="space-x-4">
           <button
             className="glass px-8 py-3 rounded-full hover:glow transition-all duration-300"
