@@ -55,7 +55,7 @@ export default function Hero() {
   const downloadCV = () => {
     const link = document.createElement('a')
     link.href = CV
-    link.download = 'CV-RivkyPutraSetiawan.pdf'
+    link.download = 'CV-RIVKYPUTRASETIAWAN.pdf'
     link.click()
   }
 
