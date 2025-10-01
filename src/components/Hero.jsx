@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import profileImage from "../assets/PP-MAGANG-3.jpg";
-import CV from "../assets/CV-RivkyPutraSetiawan.pdf";
+import CV from "../assets/CV-RIVKYPUTRASETIAWAN.pdf";
 import { Link } from 'react-scroll'
 
 export default function Hero() {
