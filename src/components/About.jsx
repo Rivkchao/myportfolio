@@ -30,13 +30,13 @@ export default function About() {
               { skill: 'React Native', percent: 78 },
               { skill: 'PHP/Laravel', percent: 86 },
               ].map(skill => (
-                <div key={skill.name} className="skill-item">
+                <div key={skill.skill} className="skill-item">
                   <div className="flex justify-between mb-2">
-                    <span className="text-lg">{skill.name}</span>
-                    <span className="text-blue-400">{skill.width}%</span>
+                    <span className="text-lg">{skill.skill}</span>
+                    <span className="text-blue-400">{skill.percent}%</span>
                   </div>
                   <div className="bg-gray-800 rounded-full h-2">
-                    <div className="skill-bar rounded-full" data-width={skill.width}></div>
+                    <div className="skill-bar rounded-full" data-width={skill.percent}></div>
                   </div>
                 </div>
               ))}
