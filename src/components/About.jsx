@@ -11,9 +11,9 @@ export default function About() {
             <div className="fade-in glass p-8 rounded-2xl">
               <h3 className="text-3xl font-bold mb-6">Who I Am</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Saya adalah seorang Frontend Developer dengan passion yang tinggi untuk menciptakan
-                pengalaman web yang menakjubkan. Dengan pengalaman 3+ tahun dalam industri teknologi,
-                saya fokus pada pengembangan aplikasi web yang responsif, modern, dan user-friendly.
+                Saya adalah seorang FullStack Web Developer dengan passion yang tinggi untuk menciptakan
+                pengalaman web yang menakjubkan. Dengan pengalaman 3+ tahun dalam pengembangan web,
+                saya fokus pada pengembangan aplikasi web yang responsif, modern, user-friendly, dan scalable.
               </p>
               <p className="text-gray-300 leading-relaxed">
                 Saya percaya bahwa detail kecil membuat perbedaan besar dalam menciptakan
